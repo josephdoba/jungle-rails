@@ -7,7 +7,9 @@
   <div class="order-summary jumbotron">
     <h4>Thank you for your order!</h4>
   </div>
-
+    <%= @order.id %>
+    <%= @order.email %>
+    <%= @order.line_items.products.name %>
   <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
 
 </section>
