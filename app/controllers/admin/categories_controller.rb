@@ -1,5 +1,5 @@
 class Admin::CategoriesController < ApplicationController
-  
+  # Did namespaces somehow make the routes less recognizable?? that doesn't make sense because the products one is already a name space and it works
   http_basic_authenticate_with name: ENV["USERNAME"], password: ENV["PASSWORD"]
 
   def index
