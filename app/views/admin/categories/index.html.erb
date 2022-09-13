@@ -4,12 +4,16 @@
     <h1>Admin &raquo; Categories</h1>
   </header>
 
+  <div class="well">
+    <%= link_to '+ New Category', admin_categories_new_path, class: 'btn btn-info' %>
+  </div>
+
 
   <div class="panel panel-default products">
     <table class="table table-bordered">
       <thead>
         <tr>
-          <th><%= render @categories.all %></th>
+          <th><%= render @categories %></th>
         </tr>
       </thead>
     </table>
