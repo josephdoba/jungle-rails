@@ -7,13 +7,4 @@ class User < ApplicationRecord
   validates_associated :password, :minimum => 5, :on => :create
   validates :confirmation_password, presence: true
 
-  
-
-
 end
-
-# class User < ActiveRecord::Base
-
-#   has_secure_password
-
-# end
