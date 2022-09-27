@@ -1,10 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-<<<<<<< HEAD
   describe 'Validations' do
     before do
-      @user = User.new(first_name: 'Stan', last_name: "Marsh", email: "stanmarsh@southpark.co", password: "12345", confirmation_password: "12345")
+      @user = User.new(name: 'Stan Marsh', email: "stanmarsh@southpark.co", password: "12345", confirmation_password: "12345")
     end
 
     it 'should be valid when password and confirmation_password are matching' do
@@ -46,7 +45,3 @@ RSpec.describe User, type: :model do
   end
   
 end
-=======
-  pending "add some examples to (or delete) #{__FILE__}"
-end
->>>>>>> feature/user-auth
