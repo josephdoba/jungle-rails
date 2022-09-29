@@ -2,6 +2,7 @@ describe("visit product page", () => {
   beforeEach(() =>{ 
     cy.visit("/")
     cy.get('.products article').first().click()
+
   });
 
   it("the product page details should be visible", () => {
@@ -15,5 +16,6 @@ describe("visit product page", () => {
   it("the product page price should be visible", () => {
     cy.get(".price").should("be.visible");
   });
+
 
 });
